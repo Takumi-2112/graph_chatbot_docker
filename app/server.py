@@ -21,7 +21,7 @@ app = FastAPI()
 # Allow all CORS (cross-origin requests)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Only allow your frontend
+    allow_origins=["https://graph-chatbot.netlify.app"],  # Only allow your frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
